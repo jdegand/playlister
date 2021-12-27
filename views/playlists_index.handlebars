@@ -1,0 +1,10 @@
+{{#each playlists}}
+    <a href="/playlists/{{this._id}}">Detail View</a>
+    <div>{{this.title}}</div>
+    <div>{{this.description}}</div>
+    <div>{{#each this.videos}}</div>
+    <div>{{this}}</div>
+    {{/each}}
+{{/each}}
+
+<a href='/playlists/new'>New Playlist</a>
